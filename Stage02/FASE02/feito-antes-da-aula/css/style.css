@@ -1,0 +1,88 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 65px 153px 58px 122px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header li{
+    /* letter-spacing: 3px; */
+    margin-left: 48px;
+}
+
+.home-menu{
+    font-weight: bold;
+}
+
+.sobre-menu, .treinar-menu{
+    color: gray;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 153px 82.36px 119px;
+}
+
+main .text{
+    width: 489px;
+    height: 332px;
+}
+
+.text h1{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 56px;
+    margin-bottom: 40px;
+}
+
+.text h1 span{
+    color: #89C5CC;
+}
+
+.text p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #7D7987;
+}
+
+.text button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 32px 15px;
+    gap: 10px;
+    background: #69B99D;
+    color: white;
+    border-radius: 4px;
+}
+
+#img-main{
+    width: 417px;
+    height: 433.64px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#balls-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
