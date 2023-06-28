@@ -1,0 +1,41 @@
+/* 
+
+posiion: ABSOLUTE
+
+ele libera uma opção chamada z-index
+
+o z-index faz com que voce possa mover um elementro sobre o outro
+
+
+*/
+
+
+/* 
+
+BOX-SIZING: BORDER-BOX;
+
+isso controla o tamanho das "caixas" elementos
+geralmente isso fica aplicado no primeiro item da pagina, para toda a pagina
+
+*{
+    box-sizing: border-box;
+}
+
+*/
+
+/* 
+
+APPEARANCE: NONVE;
+
+serve para remover a setinha do drop-down list
+
+    <div class="input-wrapper">
+        <label for="event-category">Categoria</label>
+        <select id="event-category">
+            <option value="live">Ao vivo</option>
+            <option value="podcast">Podcast</option>
+            <option value="mentorship">mentoria</option>
+        </select>
+    </div>
+
+*/
