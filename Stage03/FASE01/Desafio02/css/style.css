@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #bfd7e4;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 465px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  background: #293241;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+p,
+label {
+  font-family: "Poppins", sans-serif;
+}
+
+.top-form label,
+legend,
+button,
+h1 {
+  font-family: "Staatliches", sans-serif;
+}
+
+header,
+.top-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  margin-top: 107px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 36px;
+  line-height: normal;
+
+  height: 45px;
+}
+
+header p {
+  color: #fff;
+  font-size: 16px;
+  line-height: normal;
+  height: 45px;
+
+  margin-bottom: 3px;
+}
+
+.top-form {
+  margin-top: 32px;
+
+  width: 750px;
+  height: 133px;
+  flex-shrink: 0;
+
+  border-radius: 20px 20px 0px 0px;
+  background: #f67669;
+}
+
+.top-form label {
+  color: #fff;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+form {
+  border-radius: 0px 0px 20px 20px;
+  background: #fff;
+
+  padding: 32px 64px 64px 64px;
+}
+
+form fieldset {
+  border: none;
+}
+
+form label {
+  color: #4e4958;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* form input {
+  height: 55.529px;
+  flex-shrink: 0;
+} */
+
+form input,
+form textarea,
+select {
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #e6e6f0);
+  background: var(--shapes-02, #fafafc);
+}
+fieldset legend {
+  color: #253b51;
+  font-size: 24px;
+  line-height: 34px;
+
+  text-align: center;
+  margin: 34px auto 32px;
+  padding-bottom: 8px;
+
+  border-bottom: 2px solid #e6e6f0;
+}
+
+fieldset .input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper input {
+  height: 55.529px;
+  /* flex-shrink: 0; */
+}
+
+.input-wrapper label {
+  margin-bottom: 8px;
+}
+
+#fieldset-personal-info .col-2-personal-info {
+  display: flex;
+  gap: 22px;
+}
+
+#fieldset-personal-info .col-2-personal-info .input-wrapper {
+  width: 50%;
+}
+
+#fieldset-info-mentorship .select-wrapper:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#fieldset-info-mentorship .input-wrapper-checkbox {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.select-wrapper {
+  position: relative;
+  font-family: Arial;
+}
+
+.select-wrapper select {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 8px;
+}
+
+#personal-name,
+#personal-lastname,
+#select-mentor,
+#feedback-mentor {
+  margin-bottom: 16px;
+}
+
+#personal-name,
+#personal-lastname {
+  padding: 0 20px;
+}
+
+#feedback-mentor {
+  padding: 20px;
+}
+
+.input-wrapper-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.input-wrapper-checkbox input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.input-wrapper-checkbox input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='%23FAFAFC' stroke='%23E6E6F0' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 9C1 4.58172 4.58172 1 9 1H17C21.4183 1 25 4.58172 25 9V16.798C25 21.2163 21.4183 24.798 17 24.798H9C4.58172 24.798 1 21.2163 1 16.798V9Z'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-wrapper-checkbox input[type="checkbox"]:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='%23f03d29' stroke='%23E6E6F0' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 9C1 4.58172 4.58172 1 9 1H17C21.4183 1 25 4.58172 25 9V16.798C25 21.2163 21.4183 24.798 17 24.798H9C4.58172 24.798 1 21.2163 1 16.798V9Z'/%3E%3C/svg%3E%0A");
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='%23f03d29' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 9C1 4.58172 4.58172 1 9 1H17C21.4183 1 25 4.58172 25 9V16.798C25 21.2163 21.4183 24.798 17 24.798H9C4.58172 24.798 1 21.2163 1 16.798V9Z' fill='%23FAFAFC' stroke='%23E6E6F0'/%3E%3C/svg%3E%0A");
+}
+
+.col-agenda {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-agenda input {
+  text-align: center;
+}
+
+.col-agenda .input-wrapper:nth-child(1) {
+  width: 50%;
+  margin-right: 32px;
+}
+
+.col-agenda .input-wrapper:nth-child(2) {
+  margin-right: 10px;
+}
+
+.col-agenda .input-wrapper:nth-child(2),
+.col-agenda .input-wrapper:nth-child(3) {
+  width: 25%;
+}
+
+form button {
+  margin-top: 64px;
+
+  width: 622px;
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 8px;
+  background: #f67669;
+
+  border: none;
+
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+form button:hover {
+  background: #f03d29;
+}
