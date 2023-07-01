@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg-light, #ECE9FD);
+
+    padding: 60px 23px 66px;
+}
+
+h1{
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+ul{
+    list-style: none;
+}
+
