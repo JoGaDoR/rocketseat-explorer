@@ -12,6 +12,24 @@
   font-size: 62.5%;
 }
 
+body{
+    background: #FFF;
+    color: #A54328;
+    font-size: 1.6rem;
+}
+
+main{
+    max-width: 32rem;
+
+    margin-inline: auto;
+
+    padding: 5.6rem 4rem;
+    box-sizing: content-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
 
 .recipe h1, .ingredients{
     font-size: 2.8rem;
@@ -21,6 +39,23 @@
 p, li, strong {
     font-size: 1.4rem;
     line-height: 1.8rem;
+}
+
+.recipe img {
+    width: 100%;
+    margin-block: 3.2rem;
+}
+
+.ingredients h2{
+    margin-bottom: 3.2rem;
+}
+
+.ingredients ul, .ingredients ol{
+    padding-left: 2.4rem;
+}
+
+.ingredients ul {
+    margin-bottom: 2.4rem;
 }
 
 button {
@@ -33,11 +68,5 @@ button {
 
   border-radius: .6rem;
 
-  margin-top: 1.8rem;
-}
-
-body{
-    background: #FFF;
-    color: #A54328;
-    font-size: 1.6rem;
+  margin-top: 3.2rem;
 }
