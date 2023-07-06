@@ -1,0 +1,17 @@
+
+.app {
+    display: grid;
+    /* grid-template-columns: 100px 200px 300px; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    /* grid-template-columns: 1fr 200px 50% 30vh; */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.app > div{
+    border: 1px solid red;
+}
+
+span{
+    border: 1px solid blue;
+}

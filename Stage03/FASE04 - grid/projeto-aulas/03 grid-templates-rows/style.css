@@ -1,0 +1,22 @@
+
+body{
+    margin: 0;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1f);
+
+    height: 100vh;
+
+    border: 2px solid green;
+}
+
+.app > div {
+    border: 1px solid red;
+}
+
+span{
+    border: 1px solid blue;
+}

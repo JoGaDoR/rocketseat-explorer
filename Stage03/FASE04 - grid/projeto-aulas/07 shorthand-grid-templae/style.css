@@ -1,0 +1,38 @@
+
+body{
+    margin: 0;
+}
+
+.app{
+    display: grid;
+    grid-template: 
+    "A B B" 80px
+    "A B B" 40px
+    "A C D" 50px / 80px 1fr 2fr;
+
+    height: 100vh;
+
+    border: 2px solid green;
+}
+
+.app > * {
+    border: 1px solid red;
+}
+
+header{
+    background: #56a4f1;
+    grid-area: A;
+}
+
+main{
+    background: #56f1b6;
+    grid-area: B;
+}
+
+aside{
+    background: cyan;
+}
+
+footer{
+    background: #f1f156;
+}
