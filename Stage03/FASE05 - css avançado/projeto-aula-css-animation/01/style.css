@@ -10,18 +10,32 @@ body{
 }
 
 .square {
-    animation-name: move;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  animation-name: move, blink;
+  animation-duration: 1s, 200ms;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  /* animation-delay: 2s; */
+  animation-timing-function: steps(10);
+}
+
+.square:hover {
+  animation-play-state: paused;
 }
 
 @keyframes move {
-  /* from */
-  0% {
-  }
-
   /* to */
   100% {
     transform: translateX(calc(100vw - 100% - 16px));
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
   }
 }
