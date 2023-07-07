@@ -1,0 +1,27 @@
+body{
+    background: #0e7ba2;
+}
+
+.square{
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    opacity: .6;
+}
+
+.square {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  /* from */
+  0% {
+  }
+
+  /* to */
+  100% {
+    transform: translateX(calc(100vw - 100% - 16px));
+  }
+}
