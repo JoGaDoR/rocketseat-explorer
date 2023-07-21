@@ -1,32 +1,42 @@
-const screen1 = document.querySelector('.screen1')
-const screen2 = document.querySelector('.screen2')
-const randomNumber = Math.round(Math.random() * 10)
+// variáveis
+const screen1 = document.querySelector(".screen1")
+const screen2 = document.querySelector(".screen2")
+const btnTry = document.querySelector("#btnTry")
+const btnReset = document.querySelector("#btnReset")
+let randomNumber = Math.round(Math.random() * 10)
 let xAttempts = 1
 
-// função callback
+// Eventos
+btnTry.addEventListener('click', handleTryClick)
+btnReset.addEventListener('click', handleResetClick)
+document.addEventListener('keydown', function(e) {
+    if(e.key == 'Enter' && screen1.classList.contains('hide')) {
+        handleResetClick()
+    }
+})
+
+// funções
 function handleTryClick(event) {
-  event.preventDefault()
+    event.preventDefault() // nao faca o padrao
 
-  const inputNumber = document.querySelector('#inputNumber')
+    const inputNumber = document.querySelector("#inputNumber")
 
-  if (Number(inputNumber.value) == randomNumber) {
-    screen1.classList.add('hide')
-    screen2.classList.remove('hide')
+    if(Number(inputNumber.value) == randomNumber) {
+        toggleScreen()
+        screen2.querySelector("h2").innerText = `acertou em ${xAttempts} tentativas`
+    }
 
-    screen2.querySelector('h2').innerText = `acertou em ${xAttempts} tentativas`
-  }
-
-  inputNumber.value = ''
-  xAttempts++
+    inputNumber.value = ""
+    xAttempts++
 }
 
-// Eventos
-const btnTry = document.querySelector('#btnTry')
-const btnReset = document.querySelector('#btnReset')
+function handleResetClick() {
+    toggleScreen()
+    xAttempts = 1
+    randomNumber = Math.round(Math.random() * 10)
+}
 
-btnTry.addEventListener('click', handleTryClick)
-btnReset.addEventListener('click', function () {
-  screen1.classList.remove('hide')
-  screen2.classList.add('hide')
-  xAttempts = 1
-})
+function toggleScreen() {
+    screen1.classList.toggle("hide")
+    screen2.classList.toggle("hide")
+}
