@@ -27,10 +27,6 @@ main {
   box-shadow: 0rem 2rem 5rem 0rem rgba(0, 0, 0, 0.8);
 }
 
-.hide {
-  display: none;
-}
-
 h1 {
   color: #34355b;
   text-align: center;
@@ -105,4 +101,8 @@ h1 {
   font-family: "DM Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.hide {
+  display: none;
 }
