@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  background: #040924;
+
+  position: relative;
+}
+
+.popup-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.6rem;
+  padding: 0.8rem 0;
+  text-align: center;
+  z-index: 999; /* Ensure the popup is on top of other elements */
+
+  background: #f03e3e;
+  color: white;
+  font-size: 1.6rem;
+
+  font-weight: 700;
+  line-height: 2rem; /* 125% */
+}
+
+.popup-result {
+  background: rgba(0, 0, 0, 0.7);
+
+  position: absolute;
+  top:center;
+  left: center;
+  z-index: 999;
+
+  border: none;
+  appearance: none;
+}
+
+.popup-result h1 {
+  display: inline-flex;
+  width: 36rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.0rem;
+
+  border-radius: .6rem;
+  background: #fff;
+  box-shadow: 0 .2rem .4rem 0 rgba(0, 0, 0, 0.1);
+}
+
+h1,
+p,
+input,
+button {
+  font-family: "Roboto";
+}
+
+main {
+  display: flex;
+  width: 42.6rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow: 0rem 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+  color: #0c3440;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4rem; /* 125% */
+}
+
+p {
+  color: var(--brand-green-hover, #00453a);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem; /* 128.571% */
+}
+
+form {
+  display: flex;
+  width: 30rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.input-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.input-wrapper input {
+  display: flex;
+  padding: 1.6rem;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+
+  border-radius: 0.4rem;
+  border: 0.1rem solid rgba(73, 80, 87, 0.3);
+  background: #dce2e9;
+
+  color: rgba(73, 80, 87, 0.5);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem; /* 125% */
+}
+
+.input-wrapper input:focus {
+  border: 0.1rem solid var(--brand-colors-explorer-mid, #02799d);
+  background: #dce2e9;
+
+  color: var(--secondary-colors-gray-headline, #212529);
+}
+
+button {
+  display: inline-flex;
+  width: 100%;
+  height: 5.2rem;
+  padding: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  border-radius: 0.4rem;
+  background: var(--brand-colors-explorer-mid, #02799d);
+
+  color: var(--neutral-white, #fff);
+  text-align: center;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2rem; /* 125% */
+
+  border: none;
+}
+
+button img {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+/* erro de caracter invalido */
+
+.hide {
+  display: none;
+}
