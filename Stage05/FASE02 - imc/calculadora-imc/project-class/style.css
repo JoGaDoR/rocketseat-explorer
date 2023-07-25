@@ -119,3 +119,52 @@ form button{
 button:hover{
     background: var(--bg-button-hover);
 }
+
+/* modal */
+
+/*
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    todas as 4 propriedades podem ser trocados por
+    inset: 0;
+*/
+.modal-wrapper.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-wrapper{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+
+    display: grid;
+    place-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    position: relative;
+}
+
+.modal button{
+    background: none;
+    border: none;
+
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+
+    cursor: pointer;
+
+    transition: transform .3s;
+}
+
+.modal button:hover{
+    transform: scale(1.2);
+}
