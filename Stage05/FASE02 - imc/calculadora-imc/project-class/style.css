@@ -19,6 +19,7 @@
 
     --tt-button: white;
     --bg-button: #02799D;
+    --bg-button-hover: #085870;
     
     --bg-error: #F03E3E;
     --tt-error: white;
@@ -27,8 +28,10 @@
 body{
     font-family: "Roboto", sans-serif;
     background: #040924;
+}
+
+body, input, button{
     font-size: 1.6rem;
-    
 }
 
 .container{
@@ -53,8 +56,13 @@ body{
     color: var(--tt-heading);
 }
 
+form{
+    width: 30rem;
+}
+
 form h1{
     margin-bottom: 3.2rem;
+    line-height: 2rem;
 }
 
 form label{
@@ -83,4 +91,31 @@ form input::placeholder{
 
 form #weight{
     margin-bottom: 1.6rem;
+}
+
+form button{
+    margin-top: 3.2rem;
+    padding: 1.6rem;
+
+    width: 100%;
+
+    border-radius: .4rem;
+    border: none;
+    background-color: var(--bg-button);
+    color: var(--tt-button);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background .3s;
+}
+
+button:hover{
+    background: var(--bg-button-hover);
 }
