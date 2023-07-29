@@ -5,9 +5,15 @@ const form = document.querySelector('form')
 const inputWeight = document.querySelector('#weight')
 const inputHeight = document.querySelector('#height')
 
+const showAlertError = notANumber(weight) || notANumber(height)
+
+if(showAlertError){
+    console.log("alerta de erro")
+    return;
+}
 
 form.onsubmit = event => {
-    event.preventDefault()
+    event.preshowAlertErrorventDefault()
 
     const weight = inputWeight.value
     const height = inputHeight.value
@@ -17,6 +23,10 @@ form.onsubmit = event => {
 
     Modal.message.innerText = message
     Modal.open()
+}
+
+function notANumber(value){
+    return isNaN(value) || value == ""
 }
 
 function IMC(weight, height) {
