@@ -5,18 +5,18 @@ const form = document.querySelector('form')
 const inputWeight = document.querySelector('#weight')
 const inputHeight = document.querySelector('#height')
 
-const showAlertError = notANumber(weight) || notANumber(height)
-
-if(showAlertError){
-    console.log("alerta de erro")
-    return;
-}
-
 form.onsubmit = event => {
-    event.preshowAlertErrorventDefault()
-
+    event.preventDefault()
+    
     const weight = inputWeight.value
     const height = inputHeight.value
+    
+    const showAlertError = notANumber(weight) || notANumber(height)
+
+    if(showAlertError){
+        Modal.open()
+        return;
+    }
 
     const result = IMC(weight, height)
     const message = `Seu IMC é de ${result}`
