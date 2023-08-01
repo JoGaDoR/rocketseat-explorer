@@ -11,7 +11,3 @@ export function start(minutes, seconds){
     events.registerControls()
     events.setMinutes()
 }
-
-// export function stop(){
-
-// }
