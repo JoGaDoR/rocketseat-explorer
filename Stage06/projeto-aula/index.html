@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><SPAn></SPAn></title>
+</head>
+<body>
+    <!-- forma 01 -->
+    <!-- <nav>
+        <a href="/">Inicio</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/contato">Contato</a>
+        <a href="/404">404</a>
+    </nav> -->
+
+    <!-- forma 02 -->
+    <nav>
+        <a href="/" onclick="route()">Inicio</a>
+        <a href="/sobre" onclick="route()">Sobre</a>
+        <a href="/contato" onclick="route()">Contato</a>
+        <a href="/404" onclick="route()">404</a>
+    </nav>
+
+    <div class="app"></div>
+
+    <script>
+        /* 
+            forma 01 
+        document.querySelector("nav a:nth-child(1)").addEventListener('click', () => {})
+        document.querySelector("nav a:nth-child(1)").addEventListener('click', route())
+        */
+
+        function route(event){
+            event = event || window.event
+            event.preventDefault()
+        }
+
+    </script>
+</body>
+</html>
