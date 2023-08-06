@@ -116,6 +116,9 @@ button {
 #app.universe-css{
   display: flex;
   align-items: start;
+
+  margin: 6.2rem 0 0 10.2rem;
+  gap: 1.6rem;
 }
 
 #app.universe-css h1{
