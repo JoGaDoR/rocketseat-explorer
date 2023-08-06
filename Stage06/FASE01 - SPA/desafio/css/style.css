@@ -116,17 +116,18 @@ button {
   align-items: start;
 
   margin: 6.2rem 0 0 10.2rem;
-  gap: 1.6rem;
 }
 
-#app.universe-css h1 {
+#app.universe-css .universe-html h1 {
   color: var(--h1-p-color);
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 125%; /* 60px */
+
+  margin-bottom: 1.6rem;
 }
 
-#app.universe-css p {
+#app.universe-css .universe-html p {
   width: 64.8rem;
 
   color: var(--h1-p-color);
