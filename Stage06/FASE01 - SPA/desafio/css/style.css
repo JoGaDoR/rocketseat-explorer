@@ -8,7 +8,7 @@
 
 :root {
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
 
   --color-link-ative: hsla(0, 0%, 100%, 1);
   --color-link-noative: hsla(240, 7%, 78%, 1);
@@ -17,8 +17,16 @@
   --bg-img: lightgray;
 }
 
-body {
+/* fonts */
+h1,
+h2,
+p,
+a,
+button {
+  font-family: "Roboto", sans-serif;
 }
+
+/* BODY */
 
 .bg-img {
   background-image: url("/image/background-home.png");
@@ -31,11 +39,12 @@ body {
   padding: 0;
 }
 
+/* NAVBAR */
 #navbar {
   display: flex;
   width: 128rem;
   height: 12.2rem;
-  padding: 4rem 72.0rem 4rem 7.0rem;
+  padding: 4rem 72rem 4rem 7rem;
   align-items: center;
 
   gap: 4.4rem;
@@ -57,6 +66,45 @@ body {
   line-height: 2.2rem;
 }
 
-#navbar .nav-link.active{
-    color: var(--color-link-ative);
+#navbar .nav-link.active {
+  color: var(--color-link-ative);
+}
+
+
+/* home.html */
+#app.home-css {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 17.2rem;
+}
+
+#app.home-css h1 {
+  color: var(--h1-p-color);
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 125%; /* 60px */
+}
+
+#app.home-css button {
+  display: inline-flex;
+  padding: 1.2rem 3.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  border-radius: .5rem;
+  border: .2rem solid #fff;
+  
+  color: var(--color-logo-button);
+  background-color: transparent;
+}
+
+#app.home-css .home-html{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
