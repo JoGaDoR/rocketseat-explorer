@@ -162,3 +162,46 @@ button {
   font-weight: 400;
   line-height: 160%; /* 28.8px */
 }
+
+
+/* 404.html */
+#app.error-404-css {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 17.2rem;
+}
+
+#app.error-404-css h2{
+  font-size: 4rem;
+  color: var(--h1-p-color);
+}
+
+
+
+
+
+
+
+
+/*  
+  another way to center
+  wrap the #app in a div.container 
+*/
+/* 
+.container{
+  max-width: 100rem;
+   border: 1px solid red; 
+
+  height: 80vh;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h2{
+  transform: translateY(-50px);
+} */
