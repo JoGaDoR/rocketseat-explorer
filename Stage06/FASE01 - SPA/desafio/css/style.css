@@ -135,3 +135,30 @@ button {
   font-weight: 400;
   line-height: 160%; /* 28.8px */
 }
+
+
+/* exploration.html */
+#app.exploration-css {
+  display: flex;
+  align-items: start;
+
+  margin: 6.2rem 0 0 10.2rem;
+}
+
+#app.exploration-css .exploration-html h1 {
+  color: var(--h1-p-color);
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 125%; /* 60px */
+
+  margin-bottom: 1.6rem;
+}
+
+#app.exploration-css .exploration-html p {
+  width: 64.8rem;
+
+  color: var(--h1-p-color);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
