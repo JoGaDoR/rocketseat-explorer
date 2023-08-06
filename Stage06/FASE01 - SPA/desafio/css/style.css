@@ -110,3 +110,13 @@ button {
 
   gap: 2.4rem;
 }
+
+
+/* PAGE UNIVERSO AND EXPLORACAO */
+
+body.page-universe-exploration{
+  display: flex;
+  align-items: start;
+}
+
+/*  */
