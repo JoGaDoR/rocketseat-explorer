@@ -112,11 +112,15 @@ button {
 }
 
 
-/* PAGE UNIVERSO AND EXPLORACAO */
-
-body.page-universe-exploration{
+/* universe.html */
+#app.universe-css{
   display: flex;
   align-items: start;
 }
 
-/*  */
+#app.universe-css h1{
+  color: var(--platform-aliases-ttulos, #E1E1E6);
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 125%; /* 60px */
+}
