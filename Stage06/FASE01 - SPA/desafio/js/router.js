@@ -1,4 +1,5 @@
 import {htmlStyelClassTogle} from "./htmlStyleClassTogle.js"
+import {navLinks, setActiveLink} from "./navbarStyleTogle.js"
 
 export class Router{
     routes = []
@@ -25,6 +26,12 @@ export class Router{
         .then(html => {
             document.querySelector("#app").innerHTML = html
             htmlStyelClassTogle(pathname)
+        })
+    }
+
+    activeLink(){
+        navLinks.forEach(link => {
+            link.addEventListener("click", setActiveLink)
         })
     }
 }

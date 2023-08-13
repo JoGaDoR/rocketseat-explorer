@@ -16,3 +16,14 @@ export function htmlStyelClassTogle(pathname){
     }
 
 }
+
+function applyActiveClassToCurrentPage() {
+    const pathName = window.location.pathname;
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === pathName) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
