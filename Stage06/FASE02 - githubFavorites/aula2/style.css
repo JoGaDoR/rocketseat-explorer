@@ -82,3 +82,24 @@ header h1{
 .search button:hover{
     filter: brightness(1.4);
 }
+
+table{
+    width: 100%;
+}
+
+table * {
+    font-size: 1.4ren;
+    color: var(--text-color);
+}
+
+table th{
+
+}
+
+td.user img{
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
