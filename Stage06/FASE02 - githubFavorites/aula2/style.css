@@ -109,6 +109,19 @@ table th:last-child{
     border-top-right-radius: .4rem;
 }
 
+table tr:nth-child(even) {
+    background: #eee;
+}
+
+table tr:nth-child(odd){
+    background: #ddd;
+}
+
+table td{
+    padding: 1.5rem;
+    text-align: left;
+}
+
 td.user img{
     width: 5rem;
     height: 5rem;
