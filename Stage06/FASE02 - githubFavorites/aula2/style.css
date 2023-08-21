@@ -122,6 +122,12 @@ table td{
     text-align: left;
 }
 
+td.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 td.user img{
     width: 5rem;
     height: 5rem;
