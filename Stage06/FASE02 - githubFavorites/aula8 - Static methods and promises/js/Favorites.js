@@ -1,3 +1,21 @@
+// class para buscar dados api
+
+export class GithubUser{
+  static search(username){
+    const endpoint = `https://api.github.com/users/${username}`
+
+    return fetch(endpoint)
+    .then(data => data.json())
+    .then(({login, name, public_repos, followers}) => ({
+      login,
+      name,
+      public_repos,
+      followers
+    }))
+  }
+}
+
+
 // classe que vai conter a logica dos dados
 // como os dados serão estruturados
 
@@ -6,25 +24,12 @@ export class Favorites {
     this.root = document.querySelector(root);
 
     this.load();
+
+    GithubUser.search("maykbrito").then(user => console.log(yser))
   }
 
   load(){
     this.entries = JSON.parse(localStorage.getItem(`@github-favorites:`)) || []
-    
-    // this.entries = [
-    //     {
-    //       login: "maykbrito",
-    //       name: "Mayk Brito",
-    //       public_repos: "76",
-    //       followers: "120000",
-    //     },
-    //     {
-    //       login: "diego3g",
-    //       name: "Diego Fernandes",
-    //       public_repos: "76",
-    //       followers: "120100",
-    //     }
-    //   ]
   }
 
   delete(user){
