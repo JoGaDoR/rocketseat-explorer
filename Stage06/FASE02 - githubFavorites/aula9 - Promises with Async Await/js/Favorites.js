@@ -32,6 +32,10 @@ export class Favorites {
     this.entries = JSON.parse(localStorage.getItem(`@github-favorites:`)) || []
   }
 
+  async add(username){
+    const user = await GithubUser.search(username)
+  }
+
   delete(user){
     const filteredEntries = this.entries.filter((entry) => entry.login !== user.login)
 
@@ -48,6 +52,15 @@ export class FavoritesView extends Favorites {
     this.tbody = this.root.querySelector("table tbody");
 
     this.update()
+  }
+
+  onadd(){
+    const addButton = this.root.querySelector(".search button")
+    addButton.onclick = () => {
+      const {value} = this.root.querySelector(".search input")
+
+      this.add(value)
+    }
   }
 
   update() {
