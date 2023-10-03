@@ -33,7 +33,19 @@ export class Favorites {
   }
 
   async add(username){
-    const user = await GithubUser.search(username)
+    
+    try{
+      const user = await GithubUser.search(username)
+
+      if(user.login === undefined){
+        throw new Error("Usuario não encontrado")
+      }
+
+      this.entries = [user, ...this.entries]
+
+    }catch (error){
+      alert(error.message)
+    }
   }
 
   delete(user){
@@ -41,8 +53,10 @@ export class Favorites {
 
     this.entries = filteredEntries
     this.update()
+    
   }
 }
+
 
 // classe que vai criar a visualização e eventos do HTML
 export class FavoritesView extends Favorites {
